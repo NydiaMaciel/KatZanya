@@ -73,7 +73,7 @@
               <div class="col-sm-4 col-lg-3 text-center text-sm-start">
                 <div class="main-logo">
                   <a href="index.html">
-                    <img src="images/klogo.png" alt="logo" class="img-fluid"/>
+                    <img src="assets/katlogo.png" alt="logo" class="img-fluid"/>
                   </a>
                 </div>
               </div>
@@ -249,14 +249,46 @@
 
   <!--Section Servicio-->
   <xsl:template name="Servicios">
-    <h1>Servicios</h1>
+    <div class="section-titulo">
+      <h2 class="display-5 fw-normal" style="color:#b37c1e">Servicios</h2>
+    </div>
+
+    <xsl:for-each select="servicios/tipo/servicio">
+      <div class="servicios-content">
+        <div class="servicios-card">
+          <img class="servicios-img">
+            <xsl:attribute name="src">
+              <xsl:value-of select="imagen" />
+            </xsl:attribute>
+            <xsl:attribute name="alt">
+              <xsl:value-of select="@titulo" />
+            </xsl:attribute>
+          </img>
+          <div class="servicios-cont">
+            <h2>
+              <xsl:value-of select="@label" />
+            </h2>
+            <h6 class="ptipo">
+              <xsl:value-of select="../@nombre" />
+            </h6>
+            <p class="ppdescripp">
+              <xsl:value-of select="substring(descripccion, 1, 150)" />
+            </p>
+            <a href="#">Ver más....</a>
+          </div>
+        </div>
+      </div>
+    </xsl:for-each>
 
   </xsl:template>
 
   <!--Section Tienda-->
   <xsl:template name="Tienda">
+    <div class="section-titulo">
+      <h2 class="display-5 fw-normal" style="color:#b37c1e">Tienda</h2>
+    </div>
+    
     <section id="menuF" class="menuF section-bg">
-
       <!--<div class="container" data-aos="fade-up">-->
       <div class="container">
 
@@ -302,12 +334,14 @@
 
   <!--Section Hablemos-->
   <xsl:template name="Hablemos">
+    <div class="section-titulo">
+      <h2 class="display-5 fw-normal" style="color:#b37c1e">Hablemos de Gatos..</h2>
+    </div>
     <!--Hablemos de-->
     <section id="latest-blog" class="my-5">
       <div class="container py-5 my-5">
         <div class="row mt-5">
           <div class="section-header d-md-flex justify-content-between align-items-center mb-3">
-            <h2 class="display-3 fw-normal">Hablemos de Gatos</h2>
           </div>
         </div>
         <div class="row">
@@ -359,7 +393,9 @@
   <!--Section Contacto-->
   <xsl:template name="Contacto">
 
-
+    <div class="section-titulo">
+      <h2 class="display-5 fw-normal" style="color:#b37c1e">Contacto</h2>
+    </div>
 
     <!--API de Google-->
 
