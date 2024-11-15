@@ -16,6 +16,7 @@
 
 
         <script src="js/miJs.js" type="text/javascript"></script>
+        <script src="js/dradandrop.js" type="text/javascript"></script>
         <link rel="stylesheet" type="text/css" href="css/miEstilo.css"/>
         <link rel="stylesheet" type="text/css" href="css/vendor.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -240,7 +241,26 @@
       </div>
     </div>
 
-
+    <!--DyD-->
+    <div class="multimedia-Div">
+      <div class="media-Div">
+        <h2>Drag &amp; Drop</h2>
+        <div id="game-container">
+          <!-- Tablero -->
+          <div id="board"></div>
+        </div>
+        <!-- Fichas -->
+        <div id="pieces">
+          <div class="piece-container" draggable="true" id="red-piece">
+            <div class="piece red"></div>
+          </div>
+          <div class="piece-container" draggable="true" id="yellow-piece">
+            <div class="piece yellow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
 
 
 
