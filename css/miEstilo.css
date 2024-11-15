@@ -1,0 +1,317 @@
+﻿/* Estilos del slider */
+.slider {
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 1.0s ease;
+}
+
+.slider-item {
+    min-width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.slider-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-text {
+    width: 60%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.slider-text p {
+    text-indent: hanging;
+    font-size: xx-large;
+}
+
+.slider-img {
+    width: 40%;
+    height: 80%;
+    background-color: #dead6f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 300px;
+}
+
+.slider-img img {
+    width: 400px;
+    height: 400px;
+    border-radius: 300px;
+}
+
+.h1-slider {
+    padding: 25px 0px 10px 0px;
+    font-size: 3em;
+    color: #dead6f;
+    text-align: center;
+}
+/* Estilos de los botones de paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination button {
+    background-color: #DEAD6F;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.pagination button.active {
+    background-color: #333;
+}
+
+#categoria {
+    color: #dead6f;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-art {
+    border-radius: 30px;
+}
+
+/* Estilo para la lista de audios */
+.audio-list {
+    max-width: 600px;
+    margin: 20 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.audio-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f5dfc2;
+}
+
+.audio-item h4 {
+    margin: 0;
+    font-size: 16px;
+    flex: 1;
+}
+
+.audio-item audio {
+    outline: none;
+}
+
+
+/*--------
+filtros
+--------*/
+.menuF #menu-fltersF {
+    padding: 0;
+    margin: 0 auto 0 auto;
+    list-style: none;
+    text-align: center;
+    border-radius: 50px;
+}
+
+    .menuF #menu-fltersF li {
+        cursor: pointer;
+        display: inline-block;
+        padding: 8px 12px 10px 12px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        color: #333;
+        margin-bottom: 10px;
+        transition: all ease-in-out 0.3s;
+        border-radius: 50px;
+    }
+
+        .menuF #menu-fltersF li:hover, .menuF #menu-fltersF li.filter-active {
+            color: #cda45e;
+        }
+
+        .menuF #menu-fltersF li:last-child {
+            margin-right: 0;
+            color:#333;
+        }
+
+.menuF .menu-itemF {
+    margin-top: 50px;
+}
+
+.menuF .menu-imgF {
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+}
+
+.menuF .menu-contentF {
+    margin-left: 85px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+    .menuF .menu-contentF::after {
+        content: "................" "................" "................";
+        position: absolute;
+        left: 20px;
+        right: 0;
+        top: -4px;
+        z-index: 1;
+    }
+
+    .menuF .menu-contentF a {
+        padding-right: 10px;
+        position: relative;
+        z-index: 3;
+        font-weight: 700;
+        transition: 0.3s;
+        color:#333;
+    }
+
+        .menuF .menu-contentF a:hover {
+            color: #cda45e;
+        }
+
+    .menuF .menu-contentF span {
+        position: relative;
+        z-index: 3;
+        padding: 0 10px;
+        font-weight: 600;
+        color: #cda45e;
+    }
+
+.menuF .menu-ingredientsF {
+    margin-left: 85px;
+    font-style: italic;
+    font-size: 14px;
+}
+.menuF #menu-fltersF {
+    padding: 0;
+    margin: 0 auto 0 auto;
+    list-style: none;
+    text-align: center;
+    border-radius: 50px;
+}
+
+    .menuF #menu-fltersF li {
+        cursor: pointer;
+        display: inline-block;
+        padding: 8px 12px 10px 12px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 10px;
+        transition: all ease-in-out 0.3s;
+        border-radius: 50px;
+    }
+
+        .menuF #menu-fltersF li:hover, .menuF #menu-fltersF li.filter-active {
+            color: #cda45e;
+        }
+
+        .menuF #menu-fltersF li:last-child {
+            margin-right: 0;
+        }
+
+.menuF .menu-itemF {
+    margin-top: 50px;
+}
+
+.menuF .menu-imgF {
+    width: 70px;
+    float: left;
+    border: 5px solid rgba(30, 30, 30, 0.2);
+}
+
+.menuF .menu-contentF {
+    margin-left: 85px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+    .menuF .menu-contentF::after {
+        content: "........................" "........................" "........................";
+        position: absolute;
+        left: 20px;
+        right: 0;
+        top: -4px;
+        z-index: 1;
+    }
+
+    .menuF .menu-contentF a {
+        padding-right: 10px;
+        position: relative;
+        z-index: 3;
+        font-weight: 700;
+        transition: 0.3s;
+        color:#333;
+    }
+
+        .menuF .menu-contentF a:hover {
+            color: #cda45e;
+        }
+
+    .menuF .menu-contentF span {
+        position: relative;
+        z-index: 3;
+        padding: 0 10px;
+        font-weight: 600;
+    }
+
+.menuF .menu-ingredientsF {
+    margin-left: 85px;
+    font-size: 14px;
+}
+
+/* Estilos para el mapa y Street View */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#street-view {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.multimedia-Div{
+    width: 100%;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.media-Div {
+    width: 40%;
+    justify-content:center;
+    justify-items:center;
+    vertical-align:central;
+}
